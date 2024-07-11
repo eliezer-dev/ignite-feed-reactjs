@@ -1,9 +1,15 @@
-export function Post(props) {
+import styles from './Post.module.css'
+
+
+export function Post() {
     return (
-        <div>
-            <strong>{props.author}</strong>
-            <p>{props.content}</p>
-        </div>
+       <article className={styles.post}>
+            <header>
+                <div className={styles.author}>
+                    <img className={styles.avatar} src="https://github.com/eliezer-dev.png"/>
+                </div>
+            </header>
+       </article>
     )
     
 }
